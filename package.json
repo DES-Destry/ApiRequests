@@ -1,6 +1,6 @@
 {
   "name": "api-requests",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": "git@github.com:DES-Destry/ApiRequests.git",
   "author": "Andrey Kirik <dev.andrey.kirik@gmail.com>",
   "license": "MIT",
