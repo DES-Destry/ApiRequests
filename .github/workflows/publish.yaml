@@ -35,9 +35,8 @@ jobs:
 
       - name: Publish NuGet package
         id: publish
-        run: nuget push ApiRequests.${RELEASE_VERSION}.nupkg
+        run: nuget push ApiRequests.${RELEASE_VERSION}.nupkg --api-key ${NUGET_TOKEN}
         env:
-          NUGET_USER: ${{ secrets.NUGET_USER }}
           NUGET_TOKEN: ${{ secrets.NUGET_TOKEN }}
 
       - name: Send success telegram message
